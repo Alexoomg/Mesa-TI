@@ -1,5 +1,5 @@
 # Minuta de Hito H1 · Inicio y planificación
-**Proyecto:** Mesa de Soporte TI · **Fecha de la reunión:** __/09/2026 (usar la fecha REAL) · **Herramientas:** GitHub Projects + repositorio Git
+**Proyecto:** Mesa de Soporte TI · **Fecha de la reunión:** 29/09/2026  · **Herramientas:** GitHub Projects + repositorio Git
 
 ## 1. Asistentes y roles del hito
 | Integrante | Rol en H1 |
