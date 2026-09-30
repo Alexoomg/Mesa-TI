@@ -15,6 +15,7 @@
 
 ## 3. Alcance v0.1
 **Incluye:** registro de tickets; ID y fecha automáticos; listado; asignación de responsable; cambio de estado (Nuevo, En proceso, Resuelto, Cerrado); filtros; resumen; BD relacional; validaciones; pruebas funcionales.
+
 **Excluye:** login y roles de seguridad, notificaciones por correo, SLA automáticos, adjuntos, reportes exportables, despliegue en la nube, diseño responsive avanzado.
 
 ## 4. Historias / requisitos (9)
