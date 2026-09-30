@@ -10,6 +10,7 @@
 
 ## 2. Problema y objetivo
 **Problema:** la organización recibe solicitudes de soporte TI por correo, mensajería y conversaciones informales, sin trazabilidad de responsable, prioridad, estado ni tiempos.
+
 **Objetivo:** construir un MVP web que permita registrar y controlar una solicitud desde su creación hasta su cierre, con persistencia en base de datos relacional y evidencia de planificación y control.
 
 ## 3. Alcance v0.1
