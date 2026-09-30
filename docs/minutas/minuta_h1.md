@@ -11,3 +11,4 @@ Líder de Proyecto y Control: Iván Peña
 Solución y Desarrollo: Yanci Arizmendi 
 
 Datos, Calidad y Pruebas: Michael Mejía 
+<img width="1599" height="899" alt="Captura de pantalla 2026-09-30 113545" src="https://github.com/user-attachments/assets/92309565-db9b-4d1e-b42e-1e1d29fb10a1" />
