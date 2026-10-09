@@ -1,0 +1,22 @@
+Title,Prioridad,Hito,Estimacion_h,Responsable_sugerido,Estado_sugerido
+Definir problema objetivo y alcance v0.1,Alta,H1,4,Iván Peña,Hecho
+Redactar 8 historias/requisitos,Alta,H1,3,Iván Peña,Hecho
+Modelo de datos conceptual,Alta,H1,2,Michael Mejía,Hecho
+Boceto de interfaz y arquitectura,Media,H1,3,Yanci Arizmendi,Hecho
+Cronograma preliminar,Media,H1,2,Iván Peña,Hecho
+Script de BD (schema.sql),Alta,H2,3,Michael Mejía,Hecho
+Alcance v1.0 y backlog priorizado,Alta,H2,3,Yanci Arizmendi,Hecho
+EDT estimación de horas y costos,Alta,H2,4,Yanci Arizmendi,Hecho
+Diagrama ER y wireframes,Media,H2,4,Iván Peña,Hecho
+Plan de pruebas inicial,Alta,H2,3,Iván Peña,Hecho
+RF-01/02 Registrar ticket,Alta,H3,4,Iván Peña,En revisión/pruebas
+RF-03 Listar tickets,Alta,H3,3,Iván Peña,En revisión/pruebas
+RF-04 Cambiar estado y responsable,Alta,H3,4,Iván Peña,En revisión/pruebas
+Validaciones y manejo de errores,Alta,H3,3,Yanci Arizmendi,En revisión/pruebas
+Ejecutar pruebas iniciales y registrar defectos,Alta,H3,4,Yanci Arizmendi,En curso
+Reporte de avance N.º 1,Media,H3,3,Michael Mejía,En curso
+RF-05 Filtros,Media,H4,3,Conjunta,Por hacer
+RF-06 Resumen,Media,H4,3,Conjunta,Por hacer
+Analizar cambio/imprevisto (H4),Media,H4,4,Conjunta,Por hacer
+Reporte de avance N.º 2 y matriz de pruebas,Media,H4,3,Conjunta,Por hacer
+Informe final y presentación,Alta,Final,12,Conjunta,Backlog

@@ -1,0 +1,9 @@
+{% extends "base.html" %}{% block body %}<h2>Nueva solicitud</h2>
+{% for e in errores %}<div class="err">{{ e }}</div>{% endfor %}
+<form method="post">
+<label>Solicitante</label><input name="solicitante" value="{{ f.get('solicitante','') }}">
+<label>Título</label><input name="titulo" value="{{ f.get('titulo','') }}">
+<label>Descripción</label><textarea name="descripcion" rows="4">{{ f.get('descripcion','') }}</textarea>
+<label>Categoría</label><select name="categoria">{% for c in categorias %}<option value="{{ c.id }}" {{ 'selected' if c.id|string==f.get('categoria') }}>{{ c.nombre }}</option>{% endfor %}</select>
+<label>Prioridad</label><select name="prioridad">{% for p in prioridades %}<option {{ 'selected' if p==f.get('prioridad') }}>{{ p }}</option>{% endfor %}</select>
+<button>Registrar</button></form>{% endblock %}

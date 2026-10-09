@@ -1,0 +1,13 @@
+Title,Prioridad,Hito,Estimacion_h,Estado_sugerido,Etiqueta
+RF-05 Filtros,Media,H4,3,Hecho,
+RF-06 Resumen,Media,H4,3,Hecho,
+CAM-01 Agregar prioridad Crítica,Media,H4,3,Hecho,cambio
+R-01 Poco tiempo para QA integrado,Alta,H4,0,Bloqueado,riesgo
+R-02 Commits desbalanceados,Media,H4,0,En curso,riesgo
+Analizar cambio/imprevisto (H4),Media,H4,4,Hecho,
+Reporte de avance N.º 2 y matriz de pruebas,Media,H4,3,Hecho,
+Repetir pruebas manuales con capturas,Alta,H4,2,En curso,
+Informe final (15 secciones),Alta,Final,8,En curso,
+Presentación y demo,Alta,Final,4,Por hacer,
+Matriz de rotación validada por los 3,Alta,Final,1,Por hacer,
+Vista final del tablero (terminadas/pendientes/descartadas),Media,Final,1,Por hacer,
