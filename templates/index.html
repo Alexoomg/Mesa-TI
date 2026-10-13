@@ -1,11 +1,51 @@
 {% extends "base.html" %}{% block body %}
-<div class="cards"><div class="card">Total<b>{{ total }}</b></div>
-{% for e in estados %}<div class="card">{{ e }}<b>{{ conteo[e] }}</b></div>{% endfor %}</div>
-<form class="filtros" method="get">
-<div><label>Estado</label><select name="estado"><option value="">Todos</option>{% for e in estados %}<option {{ 'selected' if e==f_estado }}>{{ e }}</option>{% endfor %}</select></div>
-<div><label>Prioridad</label><select name="prioridad"><option value="">Todas</option>{% for p in prioridades %}<option {{ 'selected' if p==f_prioridad }}>{{ p }}</option>{% endfor %}</select></div>
-<div><label>Categoría</label><select name="categoria"><option value="">Todas</option>{% for c in categorias %}<option value="{{ c.id }}" {{ 'selected' if c.id|string==f_categoria }}>{{ c.nombre }}</option>{% endfor %}</select></div>
-<button>Filtrar</button></form>
-<table><tr><th>ID</th><th>Título</th><th>Categoría</th><th>Prioridad</th><th>Estado</th><th>Responsable</th><th>Creado</th></tr>
-{% for t in tickets %}<tr><td><a href="{{ url_for('detalle', ticket_id=t.id) }}">{{ t.id|codigo }}</a></td><td>{{ t.titulo }}</td><td>{{ t.categoria }}</td><td>{{ t.prioridad }}</td><td>{{ t.estado }}</td><td>{{ t.responsable or 'Sin asignar' }}</td><td>{{ t.fecha_creacion }}</td></tr>
-{% else %}<tr><td colspan="7">No hay solicitudes.</td></tr>{% endfor %}</table>{% endblock %}
+<div class="page-head">
+  <div><h1>Solicitudes de soporte</h1><p class="sub">Registra, asigna y da seguimiento a cada requerimiento TI.</p></div>
+  <a class="btn" href="{{ url_for('nuevo') }}">＋ Nueva solicitud</a>
+</div>
+
+<section class="stats" aria-label="Resumen">
+  <a class="stat {{ 'activo' if not f_estado }}" href="{{ url_for('index') }}" data-stat="Total" data-count="{{ total }}" style="--c:#4f46e5">
+    <div class="k"><span class="dot"></span>Total</div><div class="n">{{ total }}</div></a>
+  {% set colores = {'Nuevo':'#6366f1','En proceso':'#f59e0b','Resuelto':'#22c55e','Cerrado':'#64748b'} %}
+  {% for e in estados %}
+  <a class="stat {{ 'activo' if f_estado==e }}" href="{{ url_for('index', estado=e) }}" data-stat="{{ e }}" data-count="{{ conteo[e] }}" style="--c:{{ colores[e] }}">
+    <div class="k"><span class="dot"></span>{{ e }}</div><div class="n">{{ conteo[e] }}</div></a>
+  {% endfor %}
+</section>
+
+<form class="card filters" method="get">
+  <div class="field"><label>Estado</label><select name="estado"><option value="">Todos</option>{% for e in estados %}<option {{ 'selected' if e==f_estado }}>{{ e }}</option>{% endfor %}</select></div>
+  <div class="field"><label>Prioridad</label><select name="prioridad"><option value="">Todas</option>{% for p in prioridades %}<option {{ 'selected' if p==f_prioridad }}>{{ p }}</option>{% endfor %}</select></div>
+  <div class="field"><label>Categoría</label><select name="categoria"><option value="">Todas</option>{% for c in categorias %}<option value="{{ c.id }}" {{ 'selected' if c.id|string==f_categoria }}>{{ c.nombre }}</option>{% endfor %}</select></div>
+  <button class="btn">Filtrar</button>
+  {% if f_estado or f_prioridad or f_categoria %}<a class="btn ghost" href="{{ url_for('index') }}">Limpiar</a>{% endif %}
+</form>
+
+<div class="card" style="padding:0">
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>ID</th><th>Solicitud</th><th>Categoría</th><th>Prioridad</th><th>Estado</th><th>Responsable</th><th>Creado</th><th></th></tr></thead>
+    <tbody>
+    {% for t in tickets %}
+    <tr style="animation-delay:{{ loop.index0 * 40 }}ms">
+      <td><a class="code" href="{{ url_for('detalle', ticket_id=t.id) }}">{{ t.id|codigo }}</a></td>
+      <td><a class="title-cell" href="{{ url_for('detalle', ticket_id=t.id) }}">{{ t.titulo }}</a><div class="muted">{{ t.solicitante }}</div></td>
+      <td>{{ t.categoria }}</td>
+      <td><span class="badge p-{{ t.prioridad|slug }}">{{ t.prioridad }}</span></td>
+      <td><span class="badge e-{{ t.estado|slug }}">{{ t.estado }}</span></td>
+      <td>{% if t.responsable %}<span class="who"><span class="avatar">{{ t.responsable|iniciales }}</span>{{ t.responsable }}</span>{% else %}<span class="muted">Sin asignar</span>{% endif %}</td>
+      <td class="muted">{{ t.fecha_creacion }}</td>
+      <td><div class="row-actions">
+        <a class="icon-btn" href="{{ url_for('detalle', ticket_id=t.id) }}" title="Ver detalle" aria-label="Ver detalle"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></a>
+        <button type="button" class="icon-btn" title="Eliminar" aria-label="Eliminar {{ t.id|codigo }}" data-delete="{{ url_for('eliminar', ticket_id=t.id) }}" data-name="{{ t.id|codigo }} · {{ t.titulo }}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 11v6M14 11v6"/></svg></button>
+      </div></td>
+    </tr>
+    {% else %}
+    <tr><td colspan="8"><div class="empty"><div class="big">📭</div><b>No hay solicitudes</b><div>Ajusta los filtros o registra una nueva solicitud.</div></div></td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</div>
+{% endblock %}

@@ -1,10 +1,41 @@
-{% extends "base.html" %}{% block body %}<h2>{{ t.id|codigo }} · {{ t.titulo }}</h2>
-<p><b>Solicitante:</b> {{ t.solicitante }} · <b>Categoría:</b> {{ t.categoria }} · <b>Prioridad:</b> {{ t.prioridad }} · <b>Creado:</b> {{ t.fecha_creacion }}</p>
-<p>{{ t.descripcion }}</p>
-<form method="post" action="{{ url_for('actualizar', ticket_id=t.id) }}">
-<label>Estado</label><select name="estado">{% for e in estados %}<option {{ 'selected' if e==t.estado }}>{{ e }}</option>{% endfor %}</select>
-<label>Responsable</label><select name="responsable"><option value="">Sin asignar</option>{% for u in usuarios %}<option value="{{ u.id }}" {{ 'selected' if u.id==t.responsable_id }}>{{ u.nombre }}</option>{% endfor %}</select>
-<button>Guardar cambios</button></form>
-<h3>Historial de cambios</h3><table><tr><th>Fecha</th><th>Campo</th><th>Anterior</th><th>Nuevo</th></tr>
-{% for h in historial %}<tr><td>{{ h.fecha }}</td><td>{{ h.campo }}</td><td>{{ h.valor_anterior }}</td><td>{{ h.valor_nuevo }}</td></tr>
-{% else %}<tr><td colspan="4">Sin cambios registrados.</td></tr>{% endfor %}</table>{% endblock %}
+{% extends "base.html" %}{% block body %}
+<a class="back" href="{{ url_for('index') }}">← Volver al listado</a>
+<div class="page-head" style="margin-top:12px">
+  <div><div class="code">{{ t.id|codigo }}</div><h1>{{ t.titulo }}</h1></div>
+  <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="badge p-{{ t.prioridad|slug }}">{{ t.prioridad }}</span><span class="badge e-{{ t.estado|slug }}">{{ t.estado }}</span></div>
+</div>
+
+<div class="detail">
+  <section class="card reveal">
+    <h3 style="margin:0">Descripción</h3>
+    <p class="desc">{{ t.descripcion }}</p>
+    <div class="meta">
+      <div><span>Solicitante</span>{{ t.solicitante }}</div>
+      <div><span>Categoría</span>{{ t.categoria }}</div>
+      <div><span>Creada</span>{{ t.fecha_creacion }}</div>
+      <div><span>Responsable</span>{{ t.responsable or 'Sin asignar' }}</div>
+    </div>
+    <h3>Historial de cambios</h3>
+    {% if historial %}
+    <ul class="timeline">
+      {% for h in historial %}
+      <li style="animation-delay:{{ loop.index0 * 60 }}ms"><div><b>{{ h.campo|capitalize }}</b>: {{ h.valor_anterior }} → {{ h.valor_nuevo }}</div><div class="when">{{ h.fecha }}</div></li>
+      {% endfor %}
+    </ul>
+    {% else %}<p class="muted">Sin cambios registrados.</p>{% endif %}
+  </section>
+
+  <aside>
+    <form class="card reveal" method="post" action="{{ url_for('actualizar', ticket_id=t.id) }}" style="animation-delay:.1s">
+      <h3 style="margin-top:0">Gestionar solicitud</h3>
+      <div class="form-row"><label>Estado</label><select name="estado">{% for e in estados %}<option {{ 'selected' if e==t.estado }}>{{ e }}</option>{% endfor %}</select></div>
+      <div class="form-row"><label>Responsable</label><select name="responsable"><option value="">Sin asignar</option>{% for u in usuarios %}<option value="{{ u.id }}" {{ 'selected' if u.id==t.responsable_id }}>{{ u.nombre }}</option>{% endfor %}</select></div>
+      <button class="btn" style="width:100%;justify-content:center">Guardar cambios</button>
+    </form>
+    <div class="danger-zone reveal" style="animation-delay:.2s">
+      <p>Eliminar esta solicitud</p>
+      <button type="button" class="btn danger" data-delete="{{ url_for('eliminar', ticket_id=t.id) }}" data-name="{{ t.id|codigo }} · {{ t.titulo }}">🗑 Eliminar</button>
+    </div>
+  </aside>
+</div>
+{% endblock %}
