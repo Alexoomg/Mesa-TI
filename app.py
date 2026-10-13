@@ -1,6 +1,7 @@
 """Mesa de Soporte TI - MVP (Flask + SQLite)."""
 import os
 import sqlite3
+import unicodedata
 
 from flask import (Flask, abort, flash, g, redirect, render_template,
                    request, url_for)
@@ -37,6 +38,13 @@ def create_app(database=None):
 
     init_db()
     app.jinja_env.filters["codigo"] = lambda i: f"TCK-{int(i):04d}"
+
+    def slug(valor):
+        base = unicodedata.normalize("NFKD", str(valor)).encode("ascii", "ignore").decode()
+        return base.lower().replace(" ", "-")
+
+    app.jinja_env.filters["slug"] = slug
+    app.jinja_env.filters["iniciales"] = lambda n: "".join(p[0] for p in str(n).split()[:2]).upper()
 
     # ---------- Listado + filtros + resumen (RF-03, RF-05, RF-06) ----------
     @app.route("/")
@@ -144,13 +152,25 @@ def create_app(database=None):
         flash("Solicitud actualizada.")
         return redirect(url_for("detalle", ticket_id=ticket_id))
 
+    # ---------- Eliminar (mejora de la segunda revisión) ----------
+    @app.route("/tickets/<int:ticket_id>/eliminar", methods=["POST"])
+    def eliminar(ticket_id):
+        cargar_ticket(ticket_id)  # 404 si no existe
+        db = get_db()
+        db.execute("DELETE FROM historial WHERE ticket_id=?", (ticket_id,))
+        db.execute("DELETE FROM tickets WHERE id=?", (ticket_id,))
+        db.commit()
+        flash(f"Solicitud TCK-{ticket_id:04d} eliminada.")
+        return redirect(url_for("index"))
+
     # ---------- Manejo de errores (CAL-01) ----------
     @app.errorhandler(400)
     @app.errorhandler(404)
+    @app.errorhandler(405)
     @app.errorhandler(500)
     def error(e):
         code = getattr(e, "code", 500)
-        msg = {404: "No encontramos lo que busca.", 400: getattr(e, "description", "Solicitud inválida."),
+        msg = {404: "No encontramos lo que busca.", 405: "Acción no permitida.", 400: getattr(e, "description", "Solicitud inválida."),
                500: "Error interno. Intente nuevamente."}.get(code, "Error.")
         return render_template("error.html", code=code, msg=msg), code
 

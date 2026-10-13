@@ -15,4 +15,6 @@ Prioridades: Crítica, Alta, Media, Baja. Si ya existe una `mesa.db` anterior, b
 
 Datos de ejemplo: `sqlite3 mesa.db < datos_prueba.sql` (una sola vez).
 
+Extras de la v1.0: eliminar solicitudes con confirmación (`POST /tickets/<id>/eliminar`) e interfaz renovada.
+
 RF-01/02 `/tickets/nuevo` · RF-03 `/` · RF-04 `/tickets/<id>` · RF-05 filtros en `/` · RF-06 tarjetas de resumen · BD-01 `schema.sql` · CAL-01 validaciones, errores 400/404/500 y pruebas.
