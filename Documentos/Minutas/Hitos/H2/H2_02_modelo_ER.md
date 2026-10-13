@@ -1,4 +1,4 @@
-# Modelo ER (pegar en https://mermaid.live y exportar PNG)
+# Modelo ER
 ```mermaid
 erDiagram
     USUARIOS ||--o{ TICKETS : "es responsable de"
