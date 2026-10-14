@@ -60,17 +60,12 @@ Navegador → Flask (rutas + validaciones) → SQLite. Pantallas: Listado con fi
 <img width="1408" height="768" alt="dashboard" src="https://github.com/user-attachments/assets/f0f6a4cd-bed7-4ff1-89eb-b0c9911d6c7a" />
 
 ## W2 · Nuevo ticket (`/tickets/nuevo`)
-```
- Solicitante [____]   Título [____]   Descripción [________]
- Categoría [v]   Prioridad [v]   [Registrar]      (errores en rojo arriba)
-```
+
+<img width="1408" height="768" alt="nuevo_ticket" src="https://github.com/user-attachments/assets/a935d4f6-6851-4985-adbe-8b797ece54c0" />
+
 ## W3 · Detalle (`/tickets/<id>`)
-```
- TCK-0001 · Título        Solicitante · Categoría · Prioridad · Fecha
- Descripción
- Estado [v]  Responsable [v]  [Guardar cambios]
- Historial: fecha — Ticket creado / Estado: Nuevo → En proceso ...
-```
+
+<img width="1408" height="768" alt="detalle_ticket" src="https://github.com/user-attachments/assets/cb1c28f8-ccde-4002-a85f-808f66cfc1f9" />
 
 ## 9. Evidencia adjunta
 
