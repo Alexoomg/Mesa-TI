@@ -57,11 +57,8 @@ Navegador → Flask (rutas + validaciones) → SQLite. Pantallas: Listado con fi
 # Wireframes
 ## W1 · Listado (`/`)
 ```
-[Mesa de Soporte TI]                 [Tickets] [+ Nuevo ticket]
- Total | Nuevo | En proceso | Resuelto | Cerrado   (tarjetas)
- Estado [v]  Prioridad [v]  Categoría [v]  [Filtrar] [Limpiar]
- ID       | Título | Categoría | Prioridad | Estado | Responsable | Creado
- TCK-0001 | ...    | Redes     | Alta      | Nuevo  | —           | ...
+<img width="1408" height="768" alt="dashboard" src="https://github.com/user-attachments/assets/f0f6a4cd-bed7-4ff1-89eb-b0c9911d6c7a" />
+
 ```
 ## W2 · Nuevo ticket (`/tickets/nuevo`)
 ```
