@@ -1,5 +1,5 @@
 # Registro de cambio / imprevisto – CAM-01 (H4)
-**Fecha de registro:** __/__/____ (fecha real) · **Registrado por:** Líder de Proyecto y Control · **Origen:** [indicar si fue una solicitud real o un escenario simulado por el equipo para el hito]
+**Fecha de registro:** 07/10/2026 · **Registrado por:** Líder de Proyecto y Control
 
 ## 1. Descripción
 Se solicita agregar el nivel de prioridad **Crítica** (incidentes que detienen la operación) además de Alta, Media y Baja.
@@ -29,7 +29,7 @@ Cerrado tras retest. Commit asociado: <enlace al commit>.
 
 ---
 # Imprevisto real – CAM-02: baja de un integrante del equipo
-**Fecha del imprevisto:** __/__/____ (completar) · **Registrado por:** Líder de Proyecto y Control
+**Fecha del imprevisto:** 13/10/2026 · **Registrado por:** Líder de Proyecto y Control
 
 ## Descripción
 El equipo pasó de 3 a 2 integrantes (Iván Peña y Yanci Arizmendi) por el retiro de un integrante.
@@ -45,4 +45,4 @@ El equipo pasó de 3 a 2 integrantes (Iván Peña y Yanci Arizmendi) por el reti
 | Riesgo | Mayor carga por persona (R-04) |
 
 ## Decisión y acciones
-Aprobado por ambos integrantes. Acciones: redistribuir tareas en el tablero, actualizar la matriz de rotación, informar al docente [completar fecha de aviso] y reflejar el cambio en el informe (secciones 7, 10 y 11).
+Aprobado por ambos integrantes. Acciones: redistribuir tareas en el tablero, actualizar la matriz de rotación, informar al docente 13/10/2026 y reflejar el cambio en el informe (secciones 7, 10 y 11).
