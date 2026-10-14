@@ -56,10 +56,9 @@
 Navegador → Flask (rutas + validaciones) → SQLite. Pantallas: Listado con filtros y resumen, Nuevo ticket, Detalle/actualización. 
 # Wireframes
 ## W1 · Listado (`/`)
-```
+
 <img width="1408" height="768" alt="dashboard" src="https://github.com/user-attachments/assets/f0f6a4cd-bed7-4ff1-89eb-b0c9911d6c7a" />
 
-```
 ## W2 · Nuevo ticket (`/tickets/nuevo`)
 ```
  Solicitante [____]   Título [____]   Descripción [________]
