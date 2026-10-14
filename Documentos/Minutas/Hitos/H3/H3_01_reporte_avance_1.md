@@ -21,8 +21,8 @@ Las horas reales y fechas de cierre deben salir del historial del tablero: no es
 ## 3. Aporte por integrante (commits)
 | Integrante | Rol en H3 | Commits / archivos aportados |
 |---|---|---|
-| Iván Peña | Líder y Control + Datos, Calidad y Pruebas | completar (p. ej. tests/, datos_prueba.sql, docs/) |
-| Yanci Arizmendi | Solución y Desarrollo | completar (p. ej. app.py, templates/) |
+| Iván Peña | Líder y Control + Datos, Calidad y Pruebas | - |
+| Yanci Arizmendi | Solución y Desarrollo | completar ( - |
 
 Requisito H3: ambos integrantes deben tener commits propios en GitHub.
 
