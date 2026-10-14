@@ -52,7 +52,7 @@
 | | **Total** | **70** |
 
 ## 4. Recursos
-**Humanos:** 2 integrantes (Iván Peña y Yanci Arizmendi) con rotación de roles en cada hito (matriz abajo). **Técnicos:** Python 3, Flask, SQLite, Git/GitHub, GitHub Projects, mermaid.live; equipos personales.
+**Humanos:** 2 integrantes (Iván Peña y Yanci Arizmendi) con rotación de roles en cada hito (matriz abajo). **Técnicos:** Python 3, Flask, SQLite, Git/GitHub, GitHub Projects, Draw.io (Diagramas y recursos graficos); equipos personales.
 
 ## 5. Estimación financiera (supuesto: valor hora $8.000 CLP, editable)
 | Ítem | Cálculo | Monto CLP |
