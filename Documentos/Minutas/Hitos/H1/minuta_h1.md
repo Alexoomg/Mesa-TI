@@ -6,7 +6,7 @@
 |---|---|
 | Iván Peña | Líder de Proyecto y Control |
 | Yanci Arizmendi | Solución y Desarrollo |
-| Michael Mejía | Datos, Calidad y Pruebas |
+| En conjunto | Datos, Calidad y Pruebas |
 
 ## 2. Problema y objetivo
 **Problema:** la organización recibe solicitudes de soporte TI por correo, mensajería y conversaciones informales, sin trazabilidad de responsable, prioridad, estado ni tiempos.
