@@ -1,5 +1,5 @@
 # Reporte de Avance N.º 2 – Hito H4 (Integración, QA y control)
-**Período:** 06-10 al 07-10 · **Trabajo conjunto de los tres integrantes** · **Fecha de emisión:** __/__/____
+**Período:** 06-10 al 07-10 · **Trabajo conjunto de los dos integrantes (Iván Peña y Yanci Arizmendi)** · **Fecha de emisión:** __/__/____
 **Repositorio:** <URL> · **Tablero:** <URL>
 
 ## 1. Resumen
@@ -21,6 +21,7 @@ Las horas reales deben salir del tablero.
 | R-01 | Riesgo | Poco tiempo para QA integrado | Priorizar casos Alta y repetir los manuales hoy | En seguimiento |
 | R-02 | Riesgo | Commits desbalanceados | Cada integrante sube sus archivos con su cuenta | En seguimiento |
 | R-03 | Riesgo | `mesa.db` antigua rechaza 'Crítica' | Borrar `mesa.db` y regenerar | Mitigado (documentado) |
+| R-04 | Riesgo | Equipo reducido a 2 integrantes | Horas redistribuidas (35 h c/u), roles rotados con revisión cruzada | En seguimiento |
 | D-xx | Defecto | Registrar aquí cualquier defecto real hallado | | |
 
 ## 4. Decisiones del período

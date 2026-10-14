@@ -39,5 +39,4 @@ INSERT OR IGNORE INTO categorias (nombre) VALUES
  ('Hardware'),('Software'),('Red'),('Cuentas y accesos'),('Otro');
 INSERT OR IGNORE INTO usuarios (nombre, email) VALUES
  ('Iván Peña','ivan@mesa.local'),
- ('Yanci Arizmendi','yanci@mesa.local'),
- ('Michael Mejía','michael@mesa.local');
+ ('Yanci Arizmendi','yanci@mesa.local');

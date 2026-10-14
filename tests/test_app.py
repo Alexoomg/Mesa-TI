@@ -55,7 +55,7 @@ class MesaTest(unittest.TestCase):
         self.crear(); self.crear(titulo="Segundo ticket")
         self.c.post("/tickets/2/actualizar", data=dict(estado="Cerrado", responsable=""))
         html = self.c.get("/").get_data(as_text=True)
-        self.assertIn("Total<b>2</b>", html); self.assertIn("Cerrado<b>1</b>", html)
+        self.assertIn('data-stat="Total" data-count="2"', html); self.assertIn('data-stat="Cerrado" data-count="1"', html)
 
     def test_08_ticket_inexistente_404(self):       # CP-08 CAL-01
         self.assertEqual(self.c.get("/tickets/999").status_code, 404)
@@ -71,6 +71,24 @@ class MesaTest(unittest.TestCase):
         self.crear(prioridad="Baja", titulo="Cambiar mouse viejo")
         html = self.c.get("/?prioridad=Crítica").get_data(as_text=True)
         self.assertIn("Servidor caído total", html); self.assertNotIn("Cambiar mouse viejo", html)
+
+
+    def test_11_eliminar_ticket(self):              # CP-16 eliminar + historial
+        self.crear()
+        self.c.post("/tickets/1/actualizar", data=dict(estado="En proceso", responsable="1"))
+        r = self.c.post("/tickets/1/eliminar")
+        self.assertEqual(r.status_code, 302)
+        self.assertEqual(self.c.get("/tickets/1").status_code, 404)
+        self.assertNotIn("No enciende el PC", self.c.get("/").get_data(as_text=True))
+        import sqlite3
+        db = sqlite3.connect(self.path)
+        self.assertEqual(db.execute("select count(*) from historial").fetchone()[0], 0)
+        db.close()
+
+    def test_12_eliminar_inexistente_y_metodo(self):  # CP-17
+        self.assertEqual(self.c.post("/tickets/999/eliminar").status_code, 404)
+        self.crear()
+        self.assertEqual(self.c.get("/tickets/1/eliminar").status_code, 405)
 
 
 if __name__ == "__main__":

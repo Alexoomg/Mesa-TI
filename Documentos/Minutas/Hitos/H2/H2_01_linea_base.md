@@ -1,5 +1,5 @@
 # H2 – Línea base del proyecto (v1.0)
-**Fecha:** 30-09 · **Líder:** Yanci Arizmendi · **Solución y Desarrollo:** Michael Mejía · **Datos, Calidad y Pruebas:** Iván Peña
+**Fecha:** 30-09 · **Líder de Proyecto y Control:** Yanci Arizmendi · **Datos, Calidad y Pruebas:** Yanci Arizmendi · **Solución y Desarrollo:** Iván Peña
 
 ## 1. Alcance v1.0
 **Incluye:** RF-01 a RF-06, BD-01, CAL-01; interfaz web de 3 pantallas; historial de cambios; pruebas automatizadas y manuales.
@@ -52,7 +52,7 @@
 | | **Total** | **70** |
 
 ## 4. Recursos
-**Humanos:** 3 integrantes con rotación de roles (matriz abajo). **Técnicos:** Python 3, Flask, SQLite, Git/GitHub, GitHub Projects, mermaid.live; equipos personales.
+**Humanos:** 2 integrantes (Iván Peña y Yanci Arizmendi) con rotación de roles en cada hito (matriz abajo). **Técnicos:** Python 3, Flask, SQLite, Git/GitHub, GitHub Projects, mermaid.live; equipos personales.
 
 ## 5. Estimación financiera (supuesto: valor hora $8.000 CLP, editable)
 | Ítem | Cálculo | Monto CLP |
@@ -80,10 +80,21 @@ Ver `H2_04_plan_pruebas.md`.
 ## 9. Matriz de rotación
 | Fecha | Líder y Control | Solución y Desarrollo | Datos, Calidad y Pruebas |
 |---|---|---|---|
-| 29-09 | Iván Peña | Yanci Arizmendi | Michael Mejía |
-| 30-09 | Yanci Arizmendi | Michael Mejía | Iván Peña |
-| 06-10 | Michael Mejía | Iván Peña | Yanci Arizmendi |
+| 29-09 | Iván Peña | Yanci Arizmendi | Iván Peña |
+| 30-09 | Yanci Arizmendi | Iván Peña | Yanci Arizmendi |
+| 06-10 | Iván Peña | Yanci Arizmendi | Iván Peña |
 | 07-10 | Conjunta | Conjunta | Conjunta |
+
+### Distribución de horas planificadas por integrante (35 h cada uno)
+| Paquete | Iván Peña | Yanci Arizmendi |
+|---|---|---|
+| 1 Gestión (16 h) | 8 | 8 |
+| 2 Diseño (10 h): arquitectura, wireframes, ER | 5 (arquitectura 2, wireframes 3) | 5 (arquitectura 1, ER 4) |
+| 3 Desarrollo (20 h) | 9 (RF-03, RF-05, RF-06) | 11 (script BD, RF-01/02, RF-04) |
+| 4 Calidad y pruebas (12 h) | 7 (casos y datos 3, ejecución 2, retest 2) | 5 (plan 3, ejecución 2) |
+| 5 Documentación y cierre (12 h) | 6 | 6 |
+| **Total** | **35 h** | **35 h** |
+Costo por integrante: 35 h × $8.000 = $280.000 CLP (sin contingencia).
 
 ## 10. Traspaso H2 → H3 (completar al cerrar)
 - Terminado: ...  · En curso: ...  · Bloqueado: ...  · Evidencia: ...  · Decisión a continuar: ...

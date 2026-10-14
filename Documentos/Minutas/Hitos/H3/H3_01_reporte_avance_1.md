@@ -1,5 +1,5 @@
 # Reporte de Avance N.º 1 – Hito H3 (MVP funcional v0.1)
-**Período:** 29-09 al 06-10 · **Líder de Proyecto y Control (H3):** Michael Mejía · **Desarrollo:** Iván Peña · **Datos/Calidad/Pruebas:** Yanci Arizmendi
+**Período:** 29-09 al 06-10 · **Líder de Proyecto y Control (H3):** Iván Peña · **Datos, Calidad y Pruebas (H3):** Iván Peña · **Solución y Desarrollo (H3):** Yanci Arizmendi
 **Repositorio:** <URL> · **Tablero:** <URL> · **Fecha de emisión:** __/__/____ (fecha real)
 
 ## 1. Resumen
@@ -21,16 +21,16 @@ Las horas reales y fechas de cierre deben salir del historial del tablero: no es
 ## 3. Aporte por integrante (commits)
 | Integrante | Rol en H3 | Commits / archivos aportados |
 |---|---|---|
-| Iván Peña | Solución y Desarrollo | completar (p. ej. app.py, templates/) |
-| Yanci Arizmendi | Datos, Calidad y Pruebas | completar (p. ej. tests/, plan de pruebas) |
-| Michael Mejía | Líder y Control | completar (p. ej. docs/, README) |
+| Iván Peña | Líder y Control + Datos, Calidad y Pruebas | completar (p. ej. tests/, datos_prueba.sql, docs/) |
+| Yanci Arizmendi | Solución y Desarrollo | completar (p. ej. app.py, templates/) |
 
-Requisito H3: los tres deben tener commits propios en GitHub.
+Requisito H3: ambos integrantes deben tener commits propios en GitHub.
 
 ## 4. Defectos, riesgos y bloqueos
 | ID | Tipo | Descripción | Causa | Acción | Estado |
 |---|---|---|---|---|---|
 | R-01 | Riesgo | Poco tiempo para QA integrado antes del 13-10 | Calendario corto | Priorizar casos de prioridad Alta | Abierto |
+| R-04 | Riesgo | Equipo reducido de 3 a 2 integrantes (más carga por persona) | Redistribuir horas (35 h c/u) y priorizar el MVP | Abierto |
 | R-02 | Riesgo | Commits desbalanceados entre integrantes | Código generado en bloque | Repartir commits por archivo/tarea | Abierto |
 | D-01 | Defecto | Registrar aquí cualquier fallo real encontrado en la demo | | | |
 

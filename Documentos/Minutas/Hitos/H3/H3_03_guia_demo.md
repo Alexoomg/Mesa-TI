@@ -6,5 +6,5 @@
 5. **Asignar responsable y cambiar estado:** abrir TCK-0001 → Estado "En proceso", Responsable "Yanci Arizmendi" → Guardar. Mostrar el historial.
 6. **Validación:** intentar registrar con título vacío y mostrar el error.
 7. (Bonus) Filtros y tarjetas de resumen.
-8. Mostrar el tablero, los commits de los 3 integrantes y las pruebas (`python -m unittest tests.test_app -v`).
-**Quién habla:** Líder (H3) presenta avance planificado vs. real; Desarrollo hace la demo; Datos/Calidad muestra pruebas y defectos.
+8. Mostrar el tablero, los commits de ambos integrantes y las pruebas (`python -m unittest tests.test_app -v`).
+**Quién habla:** Iván (Líder y Datos en H3) presenta avance planificado vs. real y pruebas; Yanci (Desarrollo en H3) hace la demo.

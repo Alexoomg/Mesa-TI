@@ -2,7 +2,7 @@
 > Reemplazar los textos entre [corchetes] con datos reales. Para entregar: exportar a PDF o DOCX (sugerido 12–18 páginas sin portada, índice ni anexos).
 
 ## 1. Portada e identificación del equipo
-Evaluación 3 – Mesa de Soporte TI · Integrantes: Iván Peña, Yanci Arizmendi, Michael Mejía · Curso/Docente: [completar] · Fecha de entrega: 13-10 · Repositorio: [URL] · Tablero: [URL]
+Evaluación 3 – Mesa de Soporte TI · Integrantes: Iván Peña, Yanci Arizmendi · Curso/Docente: [completar] · Fecha de entrega: 13-10 · Repositorio: [URL] · Tablero: [URL]
 
 ## 2. Resumen ejecutivo
 Se desarrolló un sistema web liviano (Python + Flask + SQLite) para registrar y controlar solicitudes de soporte TI, reemplazando correo y mensajería informal. El MVP cubre RF-01 a RF-06, persistencia relacional (BD-01) y validaciones y pruebas (CAL-01). El proyecto se gestionó en GitHub Projects con 4 hitos, rotación de roles y un cambio controlado (prioridad Crítica). Resultado: MVP v1.0 con 10 pruebas automáticas aprobadas, [N] tareas cerradas y [N] horas reales sobre 70 estimadas.
@@ -28,16 +28,16 @@ Se desarrolló un sistema web liviano (Python + Flask + SQLite) para registrar y
 EDT de 5 paquetes y 70 h (gestión 16, diseño 10, desarrollo 20, calidad 12, documentación 12). Hitos: H1 29-09, H2 30-09, H3 06-10, H4 07-10, Final 13-10. Detalle en `H2_01_linea_base.md`. Replanificación: CAM-01 absorbido en H4 sin mover la fecha final. [Agregar tabla cronograma plan vs. real.]
 
 ## 6. Recursos humanos, técnicos y económicos
-Humanos: 3 integrantes con rotación. Técnicos: Python, Flask, SQLite, Git/GitHub, GitHub Projects, mermaid.live. Económicos (supuesto $8.000/h): mano de obra $560.000 + contingencia $56.000 = **$616.000 CLP**; herramientas $0. CAM-01 consumió $24.000 de la contingencia. [Agregar costo real según horas reales.]
+Humanos: 2 integrantes con rotación de roles (35 h planificadas cada uno). Técnicos: Python, Flask, SQLite, Git/GitHub, GitHub Projects, mermaid.live. Económicos (supuesto $8.000/h): mano de obra $560.000 + contingencia $56.000 = **$616.000 CLP**; herramientas $0. CAM-01 consumió $24.000 de la contingencia. [Agregar costo real según horas reales.]
 
 ## 7. Organización del equipo y rotación de roles
 | Fecha | Líder y Control | Solución y Desarrollo | Datos, Calidad y Pruebas |
 |---|---|---|---|
-| 29-09 | Iván Peña | Yanci Arizmendi | Michael Mejía |
-| 30-09 | Yanci Arizmendi | Michael Mejía | Iván Peña |
-| 06-10 | Michael Mejía | Iván Peña | Yanci Arizmendi |
+| 29-09 | Iván Peña | Yanci Arizmendi | Iván Peña |
+| 30-09 | Yanci Arizmendi | Iván Peña | Yanci Arizmendi |
+| 06-10 | Iván Peña | Yanci Arizmendi | Iván Peña |
 | 07-10 | Conjunta | Conjunta | Conjunta |
-Cada integrante ejerció los tres roles. Traspasos en `T1_traspasos.md`. Matriz validada en `Final_03_matriz_rotacion.md`.
+Cada integrante ejerció los tres roles. El equipo se redujo de 3 a 2 integrantes durante el proyecto (CAM-02), por lo que un integrante ejerce dos roles por hito sin que Desarrollo coincida con Datos. Traspasos en `T1_traspasos.md`. Matriz validada en `Final_03_matriz_rotacion.md`.
 
 ## 8. Diseño de solución
 **Arquitectura en 3 capas:** plantillas Jinja2 (presentación) → Flask en `app.py` (rutas, validaciones, errores) → SQLite con `schema.sql` (datos). Decisión: stack simple, sin servidor de BD, instalación con un `pip install`, adecuado al plazo. Revisión cruzada: propone Desarrollo, revisa Datos/Calidad, valida el Líder.

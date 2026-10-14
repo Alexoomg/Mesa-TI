@@ -11,6 +11,8 @@ python -m unittest tests.test_app -v
 `app.py` (rutas y validaciones) · `schema.sql` (BD + datos base) · `templates/` (interfaz) · `tests/` (pruebas) · `datos_prueba.sql` (datos de ejemplo) · `Documentos/Minutas/Hitos/` (H1, H2, H3, H4, Final)
 
 ## Requisitos cubiertos
+Equipo: Iván Peña y Yanci Arizmendi. Si ya existe una `mesa.db` creada antes de esta versión, bórrela y vuelva a ejecutar la aplicación para regenerar usuarios y restricciones.
+
 Prioridades: Crítica, Alta, Media, Baja. Si ya existe una `mesa.db` anterior, bórrela y vuelva a ejecutar.
 
 Datos de ejemplo: `sqlite3 mesa.db < datos_prueba.sql` (una sola vez).

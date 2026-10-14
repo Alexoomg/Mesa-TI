@@ -26,3 +26,23 @@ Propone: Solución y Desarrollo · Revisa: Datos, Calidad y Pruebas · Valida (a
 
 ## 5. Estado
 Cerrado tras retest. Commit asociado: <enlace al commit>.
+
+---
+# Imprevisto real – CAM-02: baja de un integrante del equipo
+**Fecha del imprevisto:** __/__/____ (completar) · **Registrado por:** Líder de Proyecto y Control
+
+## Descripción
+El equipo pasó de 3 a 2 integrantes (Iván Peña y Yanci Arizmendi) por el retiro de un integrante.
+
+## Análisis de impacto
+| Dimensión | Impacto |
+|---|---|
+| Alcance | Sin cambio: el alcance mínimo (RF-01 a RF-06) se mantiene; los extras quedan como opcionales |
+| Roles | Un integrante ejerce dos roles por hito. Regla: Solución y Desarrollo nunca coincide con Datos, Calidad y Pruebas, para mantener la revisión cruzada. Rotación en `T3_rotacion_roles.md` |
+| Horas | Las 70 h se redistribuyen en 35 h por integrante (ver `H2_01_linea_base.md`) |
+| Costo | Sin cambio en el total ($616.000 con contingencia) |
+| Cronograma | Sin cambio de fechas; se prioriza el MVP |
+| Riesgo | Mayor carga por persona (R-04) |
+
+## Decisión y acciones
+Aprobado por ambos integrantes. Acciones: redistribuir tareas en el tablero, actualizar la matriz de rotación, informar al docente [completar fecha de aviso] y reflejar el cambio en el informe (secciones 7, 10 y 11).
