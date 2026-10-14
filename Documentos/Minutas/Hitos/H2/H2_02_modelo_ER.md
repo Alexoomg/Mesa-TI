@@ -1,4 +1,5 @@
-
+# Modelo ER (pegar en https://mermaid.live y exportar PNG)
+```mermaid
 erDiagram
     USUARIOS ||--o{ TICKETS : "es responsable de"
     CATEGORIAS ||--o{ TICKETS : clasifica
@@ -23,5 +24,5 @@ erDiagram
       string valor_anterior
       string valor_nuevo
       datetime fecha }
-
-
+```
+Script: `schema.sql` (CHECK en prioridad y estado, claves foráneas activas).
