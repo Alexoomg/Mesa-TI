@@ -1,4 +1,4 @@
-```
+
 erDiagram
     USUARIOS ||--o{ TICKETS : "es responsable de"
     CATEGORIAS ||--o{ TICKETS : clasifica
@@ -23,5 +23,5 @@ erDiagram
       string valor_anterior
       string valor_nuevo
       datetime fecha }
-```
+
 
