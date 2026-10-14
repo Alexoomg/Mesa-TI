@@ -12,4 +12,4 @@ Equipo de 2 integrantes: un integrante puede ejercer dos roles en un hito, pero 
 - Iván: Líder (H1, H3), Datos/Calidad/Pruebas (H1, H3), Desarrollo (H2).
 - Yanci: Desarrollo (H1, H3), Líder (H2), Datos/Calidad/Pruebas (H2).
 
-Validación: Iván Peña ______ · Yanci Arizmendi ______ · Fecha: __/__/____
+
