@@ -81,5 +81,3 @@ Navegador → Flask (rutas + validaciones) → SQLite. Pantallas: Listado con fi
 | Commits desiguales entre integrantes | Repartir tareas y commits por rol y hito |
 | Tablero desactualizado | Actualizar estados el mismo día de cada avance |
 
-## 11. Traspaso a H2 (plantilla)
-Terminado: ______ · En curso: ______ · Bloqueado: ______ · Evidencia: ______ · Decisión que continúa: ______
