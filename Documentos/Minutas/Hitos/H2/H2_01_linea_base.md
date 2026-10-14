@@ -96,8 +96,5 @@ Ver `H2_04_plan_pruebas.md`.
 | **Total** | **35 h** | **35 h** |
 Costo por integrante: 35 h × $8.000 = $280.000 CLP (sin contingencia).
 
-## 10. Traspaso H2 → H3 (completar al cerrar)
-- Terminado: ...  · En curso: ...  · Bloqueado: ...  · Evidencia: ...  · Decisión a continuar: ...
-
-## 11. Evidencias a adjuntar
+## 10. Evidencias a adjuntar
 Captura del tablero actualizado + PNG del diagrama ER + este documento (v1.0).
