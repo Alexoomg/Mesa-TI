@@ -22,7 +22,7 @@ Las horas reales y fechas de cierre deben salir del historial del tablero: no es
 | Integrante | Rol en H3 | Commits / archivos aportados |
 |---|---|---|
 | Iván Peña | Líder y Control + Datos, Calidad y Pruebas | - |
-| Yanci Arizmendi | Solución y Desarrollo | completar ( - |
+| Yanci Arizmendi | Solución y Desarrollo | - |
 
 Requisito H3: ambos integrantes deben tener commits propios en GitHub.
 
