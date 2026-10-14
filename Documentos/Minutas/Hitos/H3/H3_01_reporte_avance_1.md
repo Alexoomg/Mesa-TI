@@ -1,6 +1,6 @@
 # Reporte de Avance N.º 1 – Hito H3 (MVP funcional v0.1)
 **Período:** 29-09 al 06-10 · **Líder de Proyecto y Control (H3):** Iván Peña · **Datos, Calidad y Pruebas (H3):** Iván Peña · **Solución y Desarrollo (H3):** Yanci Arizmendi
-**Repositorio:** <URL> · **Tablero:** <URL> ·
+
 
 ## 1. Resumen
 El MVP v0.1 está operativo: registra, guarda en SQLite, lista y actualiza estado/responsable (RF-01 a RF-04). Además ya se adelantaron RF-05 y RF-06, y las validaciones básicas (CAL-01).
