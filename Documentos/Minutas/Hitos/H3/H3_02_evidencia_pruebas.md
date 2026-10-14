@@ -1,7 +1,8 @@
 # Evidencia de pruebas – H3
 ## Ejecución automatizada
 Comando: `python -m unittest tests.test_app -v`
-Resultado: **Ran 8 tests – OK** (CP-01 a CP-08 aprobados). Pegar aquí la captura de la terminal con fecha.
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/2677c655-2ddf-4df9-9dc5-5078f3233e20" />
+Evidencia ejecución test_app
 
 ## Verificación de casos CP-09 a CP-12 (script de verificación)
 | Caso | Resultado |
