@@ -1,7 +1,7 @@
 # Mesa de Soporte TI – Informe Final (borrador completo)
 
 ## 1. Portada e identificación del equipo
-Evaluación 3 – Mesa de Soporte TI · Integrantes: Iván Peña, Yanci Arizmendi · Curso/Docente: [completar] · Fecha de entrega: 13-10 · Repositorio: [URL] · Tablero: https://github.com/users/Alexoomg/projects/2
+Evaluación 3 – Mesa de Soporte TI · Integrantes: Iván Peña, Yanci Arizmendi · Curso/Docente: [completar] · Fecha de entrega: 13-10 · · Tablero: https://github.com/users/Alexoomg/projects/2
 
 ## 2. Resumen ejecutivo
 Se desarrolló un sistema web liviano (Python + Flask + SQLite) para registrar y controlar solicitudes de soporte TI, reemplazando correo y mensajería informal. El MVP cubre RF-01 a RF-06, persistencia relacional (BD-01) y validaciones y pruebas (CAL-01). El proyecto se gestionó en GitHub Projects con 4 hitos, rotación de roles y un cambio controlado (prioridad Crítica). Resultado: MVP v1.0 con 10 pruebas automáticas aprobadas, [N] tareas cerradas y [N] horas reales sobre 70 estimadas.
