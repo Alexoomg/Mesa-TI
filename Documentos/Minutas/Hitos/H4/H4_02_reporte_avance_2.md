@@ -1,6 +1,5 @@
 # Reporte de Avance N.º 2 – Hito H4 (Integración, QA y control)
-**Período:** 06-10 al 07-10 · **Trabajo conjunto de los dos integrantes (Iván Peña y Yanci Arizmendi)** · **Fecha de emisión:** __/__/____
-**Repositorio:** <URL> · **Tablero:** <URL>
+**Período:** 06-10 al 07-10 · **Trabajo conjunto de los dos integrantes (Iván Peña y Yanci Arizmendi)** · **Fecha de emisión:** 12/10/2026
 
 ## 1. Resumen
 Se integró el producto completo (RF-01 a RF-06), se ejecutó la regresión (10/10 pruebas automáticas aprobadas) y se gestionó el cambio CAM-01 (prioridad Crítica). El producto queda en **versión v0.9** para cerrar pendientes antes del 13-10.
@@ -27,6 +26,3 @@ Las horas reales deben salir del tablero.
 ## 4. Decisiones del período
 - Aprobar CAM-01 y pasar el alcance a v1.1 sin mover la fecha final.
 - Mantener sin autenticación ni notificaciones (fuera de alcance).
-
-## 5. Pendientes para el 13-10
-Capturas de pruebas manuales, informe en PDF/DOCX, presentación, matriz de rotación firmada, vista final del tablero.
