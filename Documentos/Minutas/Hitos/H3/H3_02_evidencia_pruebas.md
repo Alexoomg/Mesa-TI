@@ -1,7 +1,8 @@
 # Evidencia de pruebas – H3
 ## Ejecución automatizada
 Comando: `python -m unittest tests.test_app -v`
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/2677c655-2ddf-4df9-9dc5-5078f3233e20" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/d243f177-f699-4eaa-8482-cd740786a4d1" />
+
 Evidencia ejecución test_app
 
 ## Verificación de casos CP-09 a CP-12 (script de verificación)
