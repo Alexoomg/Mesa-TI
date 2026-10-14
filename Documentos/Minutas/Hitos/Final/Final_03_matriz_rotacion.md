@@ -1,5 +1,4 @@
-# Matriz de rotación de roles y contribuciones por hito
-Equipo de 2 integrantes: un integrante puede ejercer dos roles en un hito, pero quien ejerce Solución y Desarrollo no ejerce Datos, Calidad y Pruebas.
+
 
 # Reparto de tareas por hito (equipo de 2 integrantes)
 
