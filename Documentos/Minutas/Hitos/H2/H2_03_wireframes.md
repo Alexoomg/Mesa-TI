@@ -1,22 +1,15 @@
 # Wireframes (boceto previo a programar)
 **1. Listado (/)**
-```
-[Solicitudes] [Nueva solicitud]                 Mesa de Soporte TI
-[Total 5] [Nuevo 2] [En proceso 1] [Resuelto 1] [Cerrado 1]
-Estado [v]  Prioridad [v]  Categoría [v]  [Filtrar]
-ID       Título            Cat.   Prior.  Estado     Responsable
-TCK-0003 Sin internet      Red    Alta    Nuevo      Sin asignar
-```
+
+<img width="1408" height="768" alt="dashboard" src="https://github.com/user-attachments/assets/c1a9bdb3-c9fd-48e9-bc36-176378147411" />
+
+
 **2. Nueva solicitud (/tickets/nuevo)**
-```
-Solicitante [____]  Título [____]  Descripción [______]
-Categoría [v]  Prioridad [v]            [Registrar]
-```
+
+<img width="1408" height="768" alt="nuevo_ticket" src="https://github.com/user-attachments/assets/93e71712-62da-427b-a52c-130c9cc50d39" />
+
+
 **3. Detalle (/tickets/<id>)**
-```
-TCK-0003 · Sin internet     Solicitante · Categoría · Prioridad · Fecha
-Descripción ...
-Estado [v]  Responsable [v]  [Guardar cambios]
-Historial: fecha | campo | anterior | nuevo
-```
-**4. Filtros:** barra superior del listado (estado, prioridad, categoría).
+
+<img width="1408" height="768" alt="detalle_ticket" src="https://github.com/user-attachments/assets/4162d22e-9280-4cd8-b0f9-3da2917ab24a" />
+
